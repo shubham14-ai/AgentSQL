@@ -1,0 +1,45 @@
+# ── Secrets ─────────────────────────────────────────────────────────
+.env
+.env.local
+.env.production
+
+# ── Python ──────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+venv/
+.venv/
+*.egg-info/
+dist/
+build/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# ── Databases (local dev artefacts) ─────────────────────────────────
+*.db
+*.sqlite
+*.sqlite3
+
+# ── Node / Next.js ──────────────────────────────────────────────────
+node_modules/
+.next/
+out/
+frontend/.next/
+frontend/out/
+frontend/node_modules/
+
+# ── Docker ──────────────────────────────────────────────────────────
+# keep docker-compose.yml; ignore override files with local secrets
+docker-compose.override.yml
+
+# ── OS / Editor ─────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+
+# ── Logs ────────────────────────────────────────────────────────────
+*.log
+logs/
